@@ -788,7 +788,11 @@ cursor: pointer;}
     line-height: 1.16;
     letter-spacing: 0.01em;}
 
-    .terms-condition { display: inline-block;
+.terms-condition { position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
         cursor: pointer;
         
@@ -799,9 +803,9 @@ cursor: pointer;}
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-    }
+}
 
-    .terms-condition-link { color: var(--color-active);
+.terms-condition-link { color: var(--color-active);
    }
 
     .form-field-box { position: relative;
@@ -843,33 +847,32 @@ cursor: pointer;}
 
 }
 
-.terms-condition { display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.icon-check { display: block;
-    width: 16px;
-    height: 16px;
-    margin-right: 7px;
-
-    border: 2px solid #212121;
-    border-radius: 4px;
 
 
-}
+.icon-check { 
+    position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 15px;
+        opacity: 1;
 
-.checkbox:checked + .icon-check { 
-    background-color: var(--color-active);
-    border-color: transparent;
-    background-image: url(../images/icon\ check-2-2.svg);
-    
-    background-origin: border-box;
-    background-size: contain;
-    background-repeat: no-repeat;
    
 }
+
+.icon-check-two {position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--color-active);
+    width: 16px;
+    height: 15px;
+    opacity: 0; }
+
+.checkbox:checked ~ .icon-check { opacity: 0;}
+.checkbox:checked ~ .icon-check-two { opacity: 1;}
+
 
 
 .mailing-list { 

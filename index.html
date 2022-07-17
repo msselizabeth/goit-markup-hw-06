@@ -101,18 +101,24 @@
                          <label class="form-field-label" for="comment">Комментарий</label>
                          <textarea class="form-field-input form-comment" name="comment" id="comment" placeholder="Введите текст"></textarea> 
                        </div> 
-                       <div class="form-field">
+                      
                         
                         <label class="form-field-label terms-condition">
                             <input class="checkbox" type="checkbox" name="terms-condition">
-                            <span class="icon-check"></span>
+                            <svg class="icon-check" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                            <svg class="icon-check-two" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-check-2"></use>
+                            </svg>
+                            <!-- <span class="icon-check"></span> -->
                              Соглашаюсь c рассылкой и принимаю 
                             
                             <a class="terms-condition-link" href="#">Условия договора</a>
                             
                            
                         </label>
-                      </div>
+                      
                       <button class="button-main" type="submit">Отправить</button>                  
                     </form>
                 </div>
