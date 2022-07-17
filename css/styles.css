@@ -727,13 +727,18 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 background-color: var(--background-color-primary);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
+    color: var(--color-primary);
     width: 30px;
     height: 30px; 
 cursor: pointer;}
-.icon-modal {
+
+.icon-modal { fill: currentColor;
     width: 18px;
     height: 18px;
 }
+
+.btn-modal:hover , .btn-modal:focus { color: var(--color-active);}
 
 /* Форма */
 
@@ -829,3 +834,4 @@ cursor: pointer;}
 
 
 .form-field-box:hover , .form-field-box:focus , .form-field-box:active  { color: var(--color-active);}
+.form-field-input:focus + .form-icon  { color: var(--color-active);}
