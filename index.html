@@ -72,27 +72,42 @@
                     <form class="form" name="main-form" autocomplete="on" novalidate >
                        <div class="form-field">
                          <label class="form-field-label" for="name">Имя</label>
-                        <input class="form-field-input" type="text" name="name" id="name">  
+                         <div class="form-field-box">
+                             <input class="form-field-input" type="text" name="name" id="name">
+                             <svg class="form-icon" aria-hidden="true">
+                             <use href="./images/icons.svg#icon-person"></use>
+                             </svg>  
+                         </div>
                        </div>  
                        <div class="form-field">
                          <label class="form-field-label" for="tel">Телефон</label>
-                        <input class="form-field-input" type="tel" name="tel" id="tel">  
+                         <div class="form-field-box">
+                            <input class="form-field-input" type="tel" name="tel" id="tel">
+                         <svg class="form-icon" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-telephone"></use>
+                         </svg>
+                         </div>
                        </div>  
-                            <div class="form-field">
+                        <div class="form-field">
                          <label class="form-field-label" for="email">Почта</label>
-                        <input class="form-field-input" type="email" name="email" id="email">  
+                         <div class="form-field-box">
+                            <input class="form-field-input" type="email" name="email" id="email">
+                          <svg class="form-icon" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-email"></use>
+                          </svg>   
+                         </div> 
                        </div>
                         <div class="form-field">
                          <label class="form-field-label" for="comment">Комментарий</label>
-                        <textarea class="form-field-input form-comment" name="comment" id="comment" placeholder="Введите текст"></textarea> 
+                         <textarea class="form-field-input form-comment" name="comment" id="comment" placeholder="Введите текст"></textarea> 
                        </div> 
                        <div class="form-field">
-                        <input id="terms-condition" class="form-field-input" type="checkbox" name="terms-condition">
-                        <label class="form-field-label" for="terms-condition">Соглашаюсь c рассылкой и принимаю 
-                            <a class="" href="#">Условия договора</a>
+                        <input id="terms-condition" class="" type="checkbox" name="terms-condition">
+                        <label class="form-field-label terms-condition" for="terms-condition">Соглашаюсь c рассылкой и принимаю 
+                            <a class="terms-condition-link" href="#">Условия договора</a>
                         </label>
                       </div>
-                      <button class="" type="submit">Отправить</button>                  
+                      <button class="button-main" type="submit">Отправить</button>                  
                     </form>
                 </div>
             </div>
