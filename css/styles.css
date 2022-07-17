@@ -10,8 +10,10 @@
     --color-active: #2196f3;
     --color-secondary: #757575;
     --color-text: #fff;
+   
     --color-icons: #afb1b8;
     --color-icons-footer: #ffffff;
+   
     --background-color-section: #f5f4fa;
     --background-color-click: #188CE8;
     --background-color-primary: #fff;
@@ -748,6 +750,8 @@ cursor: pointer;}
     letter-spacing: 0.03em;}
 
 .form-field-label { display: block;
+
+    margin-bottom: 4px;
     
     color:var(--label-color) ;
      
@@ -774,7 +778,10 @@ cursor: pointer;}
 
 .form-comment { padding: 12px 16px;
 
-font-weight: 400;
+    height: 120px;
+    resize: none;
+    
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;}
